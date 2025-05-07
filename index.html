@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Zahraa!</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #fce4ec, #f3e5f5, #e8eaf6); /* Soft pastels background */
+            color: #4a4a4a;
+            overflow-x: hidden;
+            min-height: 100vh;
+            font-family: "Roboto", sans-serif;
+        }
+        
+        /* Header Styles */
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 0;
+            background: linear-gradient(135deg, #ff9ff3, #feca57, #ff6b6b);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                to bottom right,
+                rgba(255, 255, 255, 0) 0%,
+                rgba(255, 255, 255, 0.3) 50%,
+                rgba(255, 255, 255, 0) 100%
+            );
+            transform: rotate(45deg);
+            animation: shimmer 3s infinite;
+        }
+        
+        @keyframes shimmer {
+            0% { transform: translateX(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) rotate(45deg); }
+        }
+        
+        .logo {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, #fff, #f8f8f8);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 70px;
+            font-weight: bold;
+            color: #8c1bab;
+            box-shadow: 0 10px 25px rgba(140, 27, 171, 0.6);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            font-family: 'Dancing Script', cursive;
+            border: 3px solid #ff6b6b;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            animation: pulsate 3s infinite alternate;
+        }
+        
+        @keyframes pulsate {
+            0% { transform: scale(1); box-shadow: 0 8px 20px rgba(140, 27, 171, 0.5); }
+            100% { transform: scale(1.05); box-shadow: 0 12px 30px rgba(140, 27, 171, 0.8); }
+        }
+        
+        .logo::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.9), transparent 60%);
+            z-index: 1;
+        }
+        
+        .logo span {
+            position: relative;
+            z-index: 2;
+            background: linear-gradient(to bottom, #8c1bab, #ff6b6b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        /* Main Content */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            position: relative;
+        }
+        
+        h1 {
+            text-align: center;
+            margin: 2rem 0;
+            color: #8c1bab;
+            font-size: 2.8rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            font-family: 'Dancing Script', cursive;
+            position: relative;
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        h1::after {
+            content: "✨";
+            position: absolute;
+            top: -15px;
+            right: 30%;
+            font-size: 1.5rem;
+            animation: twinkle 2s infinite;
+        }
+        
+        h1::before {
+            content: "✨";
+            position: absolute;
+            bottom: -5px;
+            left: 30%;
+            font-size: 1.5rem;
+            animation: twinkle 3s infinite 1s;
+        }
+        
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; transform: scale(0.8); }
+            50% { opacity: 1; transform: scale(1.2); }
+        }
+        
+        h2 {
+            font-family: 'Dancing Script', cursive;
+        }
+        
+        .birthday-message {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(140, 27, 171, 0.15);
+            text-align: center;
+            margin-bottom: 2rem;
+            border: 2px solid #ff9ff3;
+            position: relative;
+            overflow: hidden;
+            animation: fadeIn 1.5s ease-out;
+            transform-style: preserve-3d;
+            transition: transform 0.5s;
+        }
+        
+        .birthday-message:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(140, 27, 171, 0.25);
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .birthday-message::before {
+            content: "🎂";
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 1.5rem;
+            animation: bounce 2s infinite;
+        }
+        
+        .birthday-message::after {
+            content: "🎁";
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 1.5rem;
+            animation: bounce 2s infinite 0.5s;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .birthday-message p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        
+        /* Countdown Section */
+        .countdown {
+            background: linear-gradient(135deg, #8c1bab, #ff6b6b);
+            padding: 2.5rem;
+            border-radius: 20px;
+            color: white;
+            text-align: center;
+            margin: 2rem 0;
+            box-shadow: 0 10px 30px rgba(140, 27, 171, 0.3);
+            position: relative;
+            overflow: hidden;
+            animation: slideIn 1s ease-out;
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .countdown::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+            opacity: 0.5;
+        }
+        
+        .countdown h2 {
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .countdown-timer {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .countdown-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .countdown-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            min-width: 70px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+        
+        .countdown-number:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .countdown-number::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px 10px 0 0;
+        }
+        
+        .countdown-label {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #8c1bab, #ff6b6b);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        footer::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(to right, #feca57, #ff9ff3, #ff6b6b, #8c1bab);
+            animation: rainbow 5s linear infinite;
+        }
+        
+        @keyframes rainbow {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        
+        footer p {
+            margin: 0.5rem 0;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Animations */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        /* Confetti Effect */
+        .confetti {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            opacity: 0.7;
+            z-index: 9999;
+            animation: confetti 5s ease-in-out infinite;
+        }
+        
+        @keyframes confetti {
+            0% { transform: translateY(-10px) rotate(0); opacity: 0.7; }
+            100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+        }
+        
+        /* Star animation */
+        .star {
+            position: absolute;
+            font-size: 20px;
+            color: #feca57;
+            animation: twinkle 2s infinite random;
+            opacity: 0.8;
+            z-index: 0;
+        }
+        
+        /* Balloon animation */
+        .balloon {
+            position: absolute;
+            font-size: 30px;
+            animation: floatUpAndDown 15s infinite linear;
+            z-index: 0;
+        }
+        
+        @keyframes floatUpAndDown {
+            0% { transform: translateY(100vh) translateX(-20px); }
+            100% { transform: translateY(-50px) translateX(20px); }
+        }
+        
+        /* Hearts animation */
+        .heart {
+            position: absolute;
+            font-size: 18px;
+            color: #ff6b6b;
+            animation: heartBeat 2s infinite;
+            opacity: 0.7;
+            z-index: 0;
+        }
+        
+        @keyframes heartBeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+        
+        /* Sparkle effect on hover */
+        .sparkle-on-hover {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .sparkle-on-hover:hover::after {
+            content: "✨";
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            font-size: 20px;
+            animation: sparkle 0.8s infinite;
+        }
+        
+        @keyframes sparkle {
+            0%, 100% { opacity: 0; transform: scale(0.8) rotate(0deg); }
+            50% { opacity: 1; transform: scale(1.2) rotate(25deg); }
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .countdown-timer {
+                flex-wrap: wrap;
+            }
+            
+            .countdown-number {
+                font-size: 2rem;
+                min-width: 60px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Header with Logo -->
+    <header>
+        <div class="logo"><span>Z</span></div>
+    </header>
+    
+    <div class="container">
+        <h1>Happy Birthday Zahraa Fathi!</h1>
+        
+        <!-- Birthday Message -->
+        <div class="birthday-message">
+            <p>Dear Zahraa,</p>
+            <p>On this special day, I want to celebrate the amazing person you are. Your kindness, intelligence, and beautiful spirit make the world a better place.</p>
+            <p>May this new year of your life be filled with joy, success, and all the dreams you wish to achieve!</p>
+            <p>With love and warm wishes on your birthday!</p>
+        </div>
+        
+
+        
+    
+        
+        <!-- Countdown Section -->
+        <div class="countdown">
+            <h2>Countdown to Your Birthday - May 9, 2025 at 12:00 AM</h2>
+            <div class="countdown-timer">
+                <div class="countdown-item">
+                    <div class="countdown-number">0</div>
+                    <div class="countdown-label">Days</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number">0</div>
+                    <div class="countdown-label">Hours</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number">0</div>
+                    <div class="countdown-label">Minutes</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number">0</div>
+                    <div class="countdown-label">Seconds</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <p>Made with ❤️ for Zahraa's Birthday</p>
+    </footer>
+    
+    <script>
+        // Create confetti elements
+        // function createConfetti() {
+        //     const confettiColors = ['#ff9ff3', '#feca57', '#ff6b6b', '#a29bfe', '#55efc4', '#fd79a8'];
+            
+        //     for (let i = 0; i < 150; i++) {
+        //         const confetti = document.createElement('div');
+        //         confetti.className = 'confetti';
+        //         confetti.style.left = Math.random() * 100 + 'vw';
+        //         confetti.style.top = -10 + 'px';  // Start above the viewport
+        //         confetti.style.backgroundColor = confettiColors[Math.floor(Math.random() * confettiColors.length)];
+        //         confetti.style.width = Math.random() * 10 + 5 + 'px';
+        //         confetti.style.height = Math.random() * 10 + 5 + 'px';
+        //         confetti.style.animationDuration = Math.random() * 3 + 2 + 's';
+        //         confetti.style.animationDelay = Math.random() * 5 + 's';
+                
+        //         document.body.appendChild(confetti);
+                
+        //         // Remove and recreate confetti after animation ends
+        //         setTimeout(() => {
+        //             document.body.removeChild(confetti);
+        //             const newConfetti = document.createElement('div');
+        //             newConfetti.className = 'confetti';
+        //             newConfetti.style.left = Math.random() * 100 + 'vw';
+        //             newConfetti.style.top = -10 + 'px';
+        //             newConfetti.style.backgroundColor = confettiColors[Math.floor(Math.random() * confettiColors.length)];
+        //             newConfetti.style.width = Math.random() * 10 + 5 + 'px';
+        //             newConfetti.style.height = Math.random() * 10 + 5 + 'px';
+        //             newConfetti.style.animationDuration = Math.random() * 3 + 2 + 's';
+                    
+        //             document.body.appendChild(newConfetti);
+        //         }, (Math.random() * 3 + 2) * 1000);
+        //     }
+        // }
+
+        // // Create floating elements (stars, balloons, hearts)
+        // function createFloatingElements() {
+        //     const starEmojis = ['✨', '⭐', '🌟'];
+        //     const balloonEmojis = ['🎈', '🎂', '🎁', '🎊', '🎉'];
+        //     const heartEmojis = ['💖', '💕', '💓', '💗', '💝'];
+            
+        //     // Create stars
+        //     for (let i = 0; i < 20; i++) {
+        //         const star = document.createElement('div');
+        //         star.className = 'star';
+        //         star.textContent = starEmojis[Math.floor(Math.random() * starEmojis.length)];
+        //         star.style.left = Math.random() * 100 + 'vw';
+        //         star.style.top = Math.random() * 100 + 'vh';
+        //         star.style.animationDuration = (Math.random() * 3 + 1) + 's';
+        //         star.style.animationDelay = Math.random() * 5 + 's';
+        //         document.body.appendChild(star);
+        //     }
+            
+        //     // Create balloons
+        //     for (let i = 0; i < 10; i++) {
+        //         const balloon = document.createElement('div');
+        //         balloon.className = 'balloon';
+        //         balloon.textContent = balloonEmojis[Math.floor(Math.random() * balloonEmojis.length)];
+        //         balloon.style.left = Math.random() * 90 + 5 + 'vw';
+        //         balloon.style.animationDuration = (Math.random() * 10 + 15) + 's';
+        //         balloon.style.animationDelay = Math.random() * 10 + 's';
+        //         document.body.appendChild(balloon);
+        //     }
+            
+        //     // Create hearts
+        //     for (let i = 0; i < 15; i++) {
+        //         const heart = document.createElement('div');
+        //         heart.className = 'heart';
+        //         heart.textContent = heartEmojis[Math.floor(Math.random() * heartEmojis.length)];
+        //         heart.style.left = Math.random() * 100 + 'vw';
+        //         heart.style.top = Math.random() * 100 + 'vh';
+        //         heart.style.animationDuration = (Math.random() * 2 + 1) + 's';
+        //         heart.style.animationDelay = Math.random() * 3 + 's';
+        //         document.body.appendChild(heart);
+        //     }
+        // }
+        
+        // // Add sparkle effect to text
+        // function addSparkleEffect() {
+        //     const paragraphs = document.querySelectorAll('.birthday-message p');
+        //     paragraphs.forEach(p => {
+        //         const words = p.innerHTML.split(' ');
+        //         const newContent = words.map(word => {
+        //             if (word.length > 5 && Math.random() > 0.7) {
+        //                 return `<span class="sparkle-on-hover">${word}</span>`;
+        //             }
+        //             return word;
+        //         }).join(' ');
+        //         p.innerHTML = newContent;
+        //     });
+        // }150; i++) {
+        //         const confetti = document.createElement('div');
+        //         confetti.className = 'confetti';
+        //         confetti.style.left = Math.random() * 100 + 'vw';
+        //         confetti.style.top = -10 + 'px';  // Start above the viewport
+        //         confetti.style.backgroundColor = confettiColors[Math.floor(Math.random() * confettiColors.length)];
+        //         confetti.style.width = Math.random() * 10 + 5 + 'px';
+        //         confetti.style.height = Math.random() * 10 + 5 + 'px';
+        //         confetti.style.animationDuration = Math.random() * 3 + 2 + 's';
+        //         confetti.style.animationDelay = Math.random() * 5 + 's';
+                
+        //         document.body.appendChild(confetti);
+                
+        //         // Remove and recreate confetti after animation ends
+        //         setTimeout(() => {
+        //             document.body.removeChild(confetti);
+        //             const newConfetti = document.createElement('div');
+        //             newConfetti.className = 'confetti';
+        //             newConfetti.style.left = Math.random() * 100 + 'vw';
+        //             newConfetti.style.top = -10 + 'px';
+        //             newConfetti.style.backgroundColor = confettiColors[Math.floor(Math.random() * confettiColors.length)];
+        //             newConfetti.style.width = Math.random() * 10 + 5 + 'px';
+        //             newConfetti.style.height = Math.random() * 10 + 5 + 'px';
+        //             newConfetti.style.animationDuration = Math.random() * 3 + 2 + 's';
+                    
+        //             document.body.appendChild(newConfetti);
+        //         }, (Math.random() * 3 + 2) * 1000);
+        //     }
+        // }
+        
+        // // Initialize countdown
+        // function initCountdown() {
+        //     // Set birthday to May 9th, 2025 at 12:00 AM (midnight)
+        //     const birthdayDate = new Date("May 9, 2025 00:00:00").getTime();
+            
+        //     // Update the countdown every second
+        //     const countdownInterval = setInterval(function() {
+        //         // Get current date and time
+        //         const now = new Date().getTime();
+                
+        //         // Find the time remaining between now and the birthday
+        //         const timeRemaining = birthdayDate - now;
+                
+        //         // Calculate days, hours, minutes, and seconds
+        //         const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+        //         const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        //         const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+        //         const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+                
+        //         // Display the result in the corresponding elements
+        //         document.querySelectorAll('.countdown-number')[0].textContent = days;
+        //         document.querySelectorAll('.countdown-number')[1].textContent = hours;
+        //         document.querySelectorAll('.countdown-number')[2].textContent = minutes;
+        //         document.querySelectorAll('.countdown-number')[3].textContent = seconds;
+                
+        //         // If the countdown is finished, display a message
+        //         if (timeRemaining < 0) {
+        //             clearInterval(countdownInterval);
+        //             document.querySelectorAll('.countdown-number')[0].textContent = '0';
+        //             document.querySelectorAll('.countdown-number')[1].textContent = '0';
+        //             document.querySelectorAll('.countdown-number')[2].textContent = '0';
+        //             document.querySelectorAll('.countdown-number')[3].textContent = '0';
+        //             document.querySelector('.countdown h2').textContent = "Happy Birthday Zahraa!";
+        //         }
+        //     }, 1000);
+        // }
+        
+        // // Run when page loads
+        // window.addEventListener('load', () => {
+        //     createConfetti();
+        //     initCountdown();
+        // });
+        
+    // Create confetti elements
+    function createConfetti() {
+        const confettiColors = ['#ff9ff3', '#feca57', '#ff6b6b', '#a29bfe', '#55efc4', '#fd79a8'];
+        
+        for (let i = 0; i < 150; i++) {
+            const confetti = document.createElement('div');
+            confetti.className = 'confetti';
+            confetti.style.left = Math.random() * 100 + 'vw';
+            confetti.style.top = -10 + 'px';  // Start above the viewport
+            confetti.style.backgroundColor = confettiColors[Math.floor(Math.random() * confettiColors.length)];
+            confetti.style.width = Math.random() * 10 + 5 + 'px';
+            confetti.style.height = Math.random() * 10 + 5 + 'px';
+            confetti.style.animationDuration = Math.random() * 3 + 2 + 's';
+            confetti.style.animationDelay = Math.random() * 5 + 's';
+            
+            document.body.appendChild(confetti);
+            
+            // Remove and recreate confetti after animation ends
+            setTimeout(() => {
+                document.body.removeChild(confetti);
+                const newConfetti = document.createElement('div');
+                newConfetti.className = 'confetti';
+                newConfetti.style.left = Math.random() * 100 + 'vw';
+                newConfetti.style.top = -10 + 'px';
+                newConfetti.style.backgroundColor = confettiColors[Math.floor(Math.random() * confettiColors.length)];
+                newConfetti.style.width = Math.random() * 10 + 5 + 'px';
+                newConfetti.style.height = Math.random() * 10 + 5 + 'px';
+                newConfetti.style.animationDuration = Math.random() * 3 + 2 + 's';
+                
+                document.body.appendChild(newConfetti);
+            }, (Math.random() * 3 + 2) * 1000);
+        }
+    }
+
+    // Initialize countdown
+    function initCountdown() {
+        // Set birthday to May 9th, 2025 at 12:00 AM (midnight)
+        const birthdayDate = new Date("2025-05-09T00:00:00").getTime();
+        
+        // Update the countdown every second
+        const countdownInterval = setInterval(function() {
+            // Get current date and time
+            const now = new Date().getTime();
+            
+            // Find the time remaining between now and the birthday
+            const timeRemaining = birthdayDate - now;
+            
+            // Calculate days, hours, minutes, and seconds
+            const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+            
+            // Display the result in the corresponding elements
+            document.querySelectorAll('.countdown-number')[0].textContent = days;
+            document.querySelectorAll('.countdown-number')[1].textContent = hours;
+            document.querySelectorAll('.countdown-number')[2].textContent = minutes;
+            document.querySelectorAll('.countdown-number')[3].textContent = seconds;
+            
+            // If the countdown is finished, display a message
+            if (timeRemaining < 0) {
+                clearInterval(countdownInterval);
+                document.querySelector('.countdown h2').textContent = "Happy Birthday Zahraa!";
+                document.querySelectorAll('.countdown-number').forEach(el => el.textContent = '🎉');
+            }
+        }, 1000);
+    }
+    
+    // Run when page loads
+    window.addEventListener('load', () => {
+        createConfetti();
+        initCountdown();
+    });
+
+    </script>
+</body>
+</html>
